@@ -43,5 +43,9 @@ class UserController extends Controller
         $user->save();
         return redirect('admin/user')->with('message','Bạn đã sửa thông tin quản trị viên thành công');
     }
+    function Delete($id){
+        User::destroy($id);
+        return redirect()->back()->with('message','Bạn đã xóa quản trị viên thành công');
+    }
 
 }
