@@ -33,7 +33,7 @@
         @endif
         <td>
             <a href="../../admin/user/edit/{{ $value['id'] }}"><i><i class="fas fa-pencil-alt"></i></a>
-            <a href="../../admin/user/delete/{{ $value['id'] }}"><i class="fa fa-times text-danger text"></i></a>
+            <a onclick="return confirm('Bạn muốn xóa quản trị viên này?')" href="../../admin/user/delete/{{ $value['id'] }}"><i class="fa fa-times text-danger text"></i></a>
         </td>
 
       </tr>
