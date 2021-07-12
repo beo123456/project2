@@ -119,6 +119,8 @@ Route::group(['prefix' => 'user'], function() {
     route::post('add','UserController@PostAddUser');
     route::get('edit/{id}','UserController@GetEdit');
     route::post('edit/{id}','UserController@PostEdit');
+    route::get('delete/{id}','UserController@Delete');
+
 
 
 });
